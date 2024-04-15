@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The best hobbies!</title>
+</head>
+
+<nav class="navigacija">
+    <div class="navigacija-meni">
+        <a class="link" href="index.html">
+            Home
+        </a>
+        <a class="link" href="hobby.html">
+            Hobbies
+        </a>
+        <a class="link" target="_blank" href="https://www.youtube.com/watch?v=3HrSN7176XI">
+            Trust me
+        </a>
+        <a class="link" href="DHMIS.html">
+            DHMIS
+        </a>
+    </div>
+</nav> 
+
+
+<body>
+    <nav class="navigacija-mobile">
+        <div class="navigacija-meni-mobile">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <img class="icon" src="hamburger-menu-icon-png.jpg"/>
+                </a>
+            <a class="link" href="contact.html">
+                Contact
+            </a>
+            <a class="link" href="index.html">
+                Home
+            </a>
+            <a class="link" target="_blank" href="https://www.youtube.com/watch?v=3HrSN7176XI">
+                Trust me
+            </a>
+            <a class="link" href="DHMIS.html">
+                DHMIS
+            </a>
+        </div>
+    </nav>
+    <nav class="navigacija-mobile">
+        <a href="javascript:void(0);" onclick="myFunction()">
+        <img class="icon" src="hamburger-menu-icon-png.jpg"/>
+        </a>
+        <div class="navigacija-meni-mobile"
+        id="navigacija-meni-mobile">
+            <a class="link-mobile" href="contact.html">
+                Contact
+            </a>
+            <a class="link-mobile" href="index.html">
+                Home
+            </a>
+            <a class="link-mobile" target="_blank" href="https://www.youtube.com/watch?v=3HrSN7176XI">
+                Trust me
+            </a>
+            <a class="link-mobile" href="DHMIS.html">
+                DHMIS
+            </a>
+        </div>
+    </nav> 
+
+    <h1 class="h1-hobby">My hobbies!</h1>
+    <h2 class="h2-hobby">>>I have a lot of hobbies so I dont even know where to start.
+    </h2>
+    <h2 class="h2-hobby">>>One thing that *most* of my hobbies have in comon is collecting.
+    </h2>
+    <h2  class="h2-hobby">
+        >>Collecting minerals, rocks, books that Im never going to read anyways, and so on so on.
+    </h2>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navigacija-meni-mobile");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "flex";
+            x.style.flexDirection = "column"
+            x.style.gap = "10px"
+            x.style.alignContent = "center"
+            x.style.justifyContent = "center"
+            x.style.backgroundColor = "rgb(4, 4, 69)"
+            x.style.width = "100vw"
+            x.style.height = "100vh"
+          }
+        }
+        </script>
+</body>
+</html>
